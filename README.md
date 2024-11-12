@@ -19,9 +19,14 @@
 
 ## 使用方式
 密码登陆
-`zjy2_icve password <username> <password>`
+``` shell
+zjy2_icve password <username> <password>
+```
+
 token登陆
-`zjy2_icve token <token>`
+``` shell 
+zjy2_icve token <token>
+```
 
 # 说明
 - 本软件仅供学习交流使用，请勿用于商业用途
