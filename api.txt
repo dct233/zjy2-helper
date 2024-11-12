@@ -1,0 +1,181 @@
+// 获取课程
+https://zjy2.icve.com.cn/prod-api/spoc/courseInfoStudent/myCourseList?pageNum=1&pageSize=4&flag=2&isCriteria=1
+
+// 获取课程内容
+https://zjy2.icve.com.cn/prod-api/spoc/courseDesign/study/record?courseId=B17A2998-C33E-6525-A853-C668D7DE842C&courseInfoId=B17A2998-C33E-6525-A853-C668D860D738&parentId=0&level=1&classId=3527C361-21B0-4743-B8FE-4DBD92EE9331
+
+coureseId: 在获取课程时获得
+courseInfoId: 同coureseId
+parentID: 课程节点ID
+level: 应该是节点深度
+classId: 获取课程时获得
+
+// 疑似upload加密js
+encryptData: function(e) {
+  // t为cookie内的jwt
+  var t = Object(g["a"])()
+  , r = f.a.MD5(t).toString(f.a.enc.hex).substring(0, 16)
+  , i = f.a.AES.encrypt(f.a.enc.Utf8.parse(JSON.stringify(e)), f.a.enc.Utf8.parse(r), {
+    mode: f.a.mode.ECB,
+    padding: f.a.pad.Pkcs7
+  }).toString();
+  return i
+},
+
+// 此api可以从查询的fileUrl字符串json中找到ppt一类的下一级api数量
+GET https://zjy2.icve.com.cn/prod-api/spoc/courseDesign/getStudyCellInfo?id=94F500EB-8E99-4C40-A062-868CA9056170&classId=3527C361-21B0-4743-B8FE-4DBD92EE9331
+{
+  "msg": "操作成功",
+  "code": 200,
+  "data": {
+    "id": "94F500EB-8E99-4C40-A062-868CA9056170",
+    "courseId": "B17A2998-C33E-6525-A853-C668D7DE842C",
+    "courseInfoId": "B17A2998-C33E-6525-A853-C668D860D738",
+    "classId": null,
+    "name": "3.1云计算技术.pptx",
+    "parentId": "6DACB0C6-177E-4D22-B139-E200C10C9DBB",
+    "designId": "B5EE9827-0538-4009-A5A0-0219091B3A4D",
+    "topicId": "6DACB0C6-177E-4D22-B139-E200C10C9DBB",
+    "knowledgePointsId": "",
+    "level": null,
+    "levelName": null,
+    "fileType": "ppt",
+    "fileUrl": "{\"ossGenUrl\":\"https://file.icve.com.cn/file_gen_doc_zyq/719/395/B3F62DA323AF40E56E5AFDD31B801600.pptx\",\"url\":\"doc_zyq/g@B3F62DA323AF40E56E5AFDD31B801600.pptx\",\"ossOriUrl\":\"https://file.icve.com.cn/file_doc_zyq/719/395/B3F62DA323AF40E56E5AFDD31B801600.pptx\",\"md5\":\"B3F62DA323AF40E56E5AFDD31B801600\"}",
+    "content": null,
+    "allowDownload": null,
+    "examId": null,
+    "sort": 1725502017670,
+    "startTime": null,
+    "endTime": null,
+    "week": null,
+    "children": [],
+    "studentStudyRecord": {
+      "searchValue": null,
+      "orderValue": null,
+      "createBy": null,
+      "createTime": null,
+      "updateBy": null,
+      "updateTime": null,
+      "remark": null,
+      "params": {},
+      "id": "AD52C4FC-E3DC-48E9-B759-B01BC2C137C7",
+      "studentId": "2bc559ed2dfe53b372c8efe1ac3e8719",
+      "studentName": "胡珈铭",
+      "courseInfoId": "B17A2998-C33E-6525-A853-C668D860D738",
+      "classId": "3527C361-21B0-4743-B8FE-4DBD92EE9331",
+      "actualNum": 1,
+      "lastNum": 1,
+      "totalNum": 24,
+      "speed": 4,
+      "sourceId": "94F500EB-8E99-4C40-A062-868CA9056170",
+      "parentId": null,
+      "delFlag": null,
+      "studyTime": 141,
+      "schoolId": null,
+      "type": null
+    },
+    "last": null,
+    "next": {
+      "id": "09447CEA-5D41-4667-9075-AEDEEF2288F0",
+      "courseId": "B17A2998-C33E-6525-A853-C668D7DE842C",
+      "courseInfoId": "B17A2998-C33E-6525-A853-C668D860D738",
+      "classId": null,
+      "name": "任务3.1 工业互联网云计算技术.mp4",
+      "parentId": "6DACB0C6-177E-4D22-B139-E200C10C9DBB",
+      "designId": "B5EE9827-0538-4009-A5A0-0219091B3A4D",
+      "topicId": "6DACB0C6-177E-4D22-B139-E200C10C9DBB",
+      "knowledgePointsId": null,
+      "level": null,
+      "levelName": null,
+      "fileType": "video",
+      "fileUrl": "{\"ossGenUrl\":\"https://file.icve.com.cn/file_gen_doc/393/186/6242EB6B921C393759348B61B68C6F8B.mp4\",\"url\":\"doc/g@6242EB6B921C393759348B61B68C6F8B.mp4\",\"ossOriUrl\":\"https://file.icve.com.cn/file_doc/393/186/6242EB6B921C393759348B61B68C6F8B.mp4\",\"md5\":\"6242EB6B921C393759348B61B68C6F8B\"}",
+      "content": null,
+      "allowDownload": null,
+      "examId": null,
+      "sort": 1725502017685,
+      "startTime": null,
+      "endTime": null,
+      "week": null,
+      "children": [],
+      "studentStudyRecord": null,
+      "last": null,
+      "next": null,
+      "isZhankai": false,
+      "isLook": null,
+      "source": "资源库",
+      "isOriginal": null,
+      "controlType": null,
+      "fixedPublishTime": null,
+      "topicControlType": null,
+      "topicFixedPublishTime": null,
+      "cellControlType": null,
+      "cellFixedPublishTime": null,
+      "isSimulation": 0,
+      "linkUrl": null,
+      "fromType": null,
+      "createBy": null,
+      "isRecovery": null,
+      "examTypeId": null,
+      "delFlag": null
+    },
+    "isZhankai": false,
+    "isLook": null,
+    "source": "资源库",
+    "isOriginal": null,
+    "controlType": null,
+    "fixedPublishTime": null,
+    "topicControlType": null,
+    "topicFixedPublishTime": null,
+    "cellControlType": null,
+    "cellFixedPublishTime": null,
+    "isSimulation": 0,
+    "linkUrl": null,
+    "fromType": 2,
+    "createBy": "b23afkt7oljgflmvxscw",
+    "isRecovery": null,
+    "examTypeId": null,
+    "delFlag": "0"
+  }
+}
+
+// 此api可以查询ppt的个数
+GET https://zjy2.icve.com.cn/prod-api/spoc/oss/getUrlPngs?fileUrl=doc_zyq%2Fg%40B3F62DA323AF40E56E5AFDD31B801600.pptx
+{
+  "msg": "操作成功",
+  "code": 200,
+  "data": [
+    "1.png",
+    "2.png",
+    "3.png",
+    "4.png",
+    "5.png",
+    "6.png",
+    "7.png",
+    "8.png",
+    "9.png",
+    "10.png",
+    "11.png",
+    "12.png",
+    "13.png",
+    "14.png",
+    "15.png",
+    "16.png",
+    "17.png",
+    "18.png",
+    "19.png",
+    "20.png",
+    "21.png",
+    "22.png",
+    "23.png",
+    "24.png"
+  ]
+}
+
+// 此api用于获取课程的学习信息，studyTime写死了为5
+https://zjy2.icve.com.cn/prod-api/spoc/courseDesign/getStudyCellInfo?id=94F500EB-8E99-4C40-A062-868CA9056170&classId=3527C361-21B0-4743-B8FE-4DBD92EE9331
+
+// 上传api
+POST https://zjy2.icve.com.cn/prod-api/spoc/studyRecord/update
+{
+    "param": "Pmkm/nvSA3CLo3nOsheW9iMthyqqx2Evyh9I0MvJXnnrbYsVeKEGXMWNjDg89bSYdOyJRCQ6cN6FPzSGlok0oDlj7OvfRxdgJe5u6nmn3lHZ6qyTMY7TnQzMSQ65GW/55uZsvMzgPWz8v3xFdHXPuxIGKASoHIs2dWn1uFadz5U77pKmy9Tw7xhzQr%2Bm4RDtmfMHkpXfiLcdKXrZyMXt22Kg/%2B9sQpyLd2otOg/lkfnV2EICoP%2BB8A0uNSANUQP6/00hJu2vCzvO5P/lGE4f/NCkwWShsmVu4WAEFijdxGM="
+}
