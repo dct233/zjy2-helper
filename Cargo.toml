@@ -3,6 +3,9 @@ name = "zjy2_icve"
 version = "0.1.0"
 edition = "2021"
 
+[profile.release]
+lto = true
+
 [dependencies]
 aes = "0.8.4"
 anyhow = "1.0.89"

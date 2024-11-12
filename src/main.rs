@@ -1,10 +1,6 @@
 use std::{env, io::{self, Write}};
 use anyhow::Ok;
 use client::{Account, Client};
-use encrypt::encrypt_data;
-use json::{
-    Node, TreeNode, UploadData
-};
 
 mod encrypt;
 mod json;
